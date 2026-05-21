@@ -1,0 +1,229 @@
+portfolio:
+  company: Real Brokerage
+  ticker: REAX
+  cfo: Gal Raber
+  total_open: 17
+  weakening: 5
+  overdue: 3
+  total_exposure: "$3.8M"
+  isr: 31
+  isr_trend: improving
+  as_of: "2026-05-20"
+
+cards:
+  - id: cr-001
+    card_type: capital_at_risk
+    title: Growth spend assumption weakening
+    exposure: "$640K"
+    owner: Maya Chen
+    team: Growth
+    stake: "$640K revenue risk this month"
+    days_since_review: 9
+    evidence:
+      - label: CAC
+        value: "$224 (↑ $14 vs plan)"
+        direction: bad
+      - label: D30 Retention
+        value: "35%  —  target: 38%"
+        direction: bad
+      - label: Falsifier status
+        value: "Threshold breached yesterday"
+        direction: bad
+    foreclosed_alternative: >
+      Pause paid acquisition until onboarding changes demonstrated
+      measurable retention lift.
+    commitment: >
+      Increase paid acquisition spend by $500K in June, assuming onboarding
+      improvements will lift D30 retention above 38% by July 15.
+    falsifier: >
+      If CAC rises above $210 and D30 retention stays below 38% for 10
+      consecutive days, stop incremental spend.
+    falsifier_status: triggered
+    current_evidence_summary: >
+      CAC at $224 against a $210 threshold. D30 retention at 35% against a
+      38% target. Falsifier breached yesterday. No owner revision submitted.
+    recommended_action: >
+      Freeze incremental spend pending a revised growth case from the owner.
+    actions:
+      - id: freeze
+        label: Freeze spend
+        style: danger
+      - id: ask
+        label: Ask for revised forecast
+        style: secondary
+      - id: override
+        label: Override concern
+        style: ghost
+
+  - id: cr-002
+    card_type: stale_commitment
+    title: Hiring plan has not been revisited
+    exposure: "$1.8M"
+    owner: Jordan Kim
+    team: Product
+    stake: "$1.8M annualized burn impact"
+    days_since_review: 31
+    evidence:
+      - label: Pipeline conversion
+        value: "Unchanged since commitment"
+        direction: bad
+      - label: Owner revision
+        value: "None submitted in 31 days"
+        direction: bad
+      - label: Stated confidence
+        value: "85%  —  not updated"
+        direction: bad
+    foreclosed_alternative: >
+      Delay 6 of 12 planned hires immediately pending conversion recovery
+      above 18% for two consecutive weeks.
+    commitment: >
+      Proceed with all 12 planned Q3 sales hires once enterprise pipeline
+      conversion exceeds 18% for two consecutive weeks.
+    falsifier: >
+      If pipeline conversion stays below 16% through June 30, the hiring
+      plan must be revised.
+    falsifier_status: approaching
+    current_evidence_summary: >
+      31 days without revision. High stated confidence combined with no
+      update and weakening evidence is historically associated with delayed
+      corrective action. Conversion still below trigger threshold.
+    recommended_action: >
+      Request owner revision within 48 hours before the falsifier threshold
+      is breached.
+    actions:
+      - id: request
+        label: Request revision now
+        style: primary
+      - id: reduce
+        label: Reduce confidence
+        style: secondary
+      - id: ignore
+        label: Ignore for now
+        style: ghost
+
+  - id: cr-003
+    card_type: positive_surprise
+    title: Pricing test outperforming expectations
+    exposure: null
+    owner: Sofia Reyes
+    team: Revenue
+    stake: "ARPU expansion opportunity"
+    days_since_review: 5
+    evidence:
+      - label: Churn
+        value: "Stable  —  no increase"
+        direction: good
+      - label: ARPU
+        value: "+7% vs baseline"
+        direction: good
+      - label: Support load
+        value: "Flat  —  no increase"
+        direction: good
+    foreclosed_alternative: >
+      Hold pricing flat until Q4 and run a smaller A/B test limited to
+      10% of the mid-market segment.
+    commitment: >
+      Run pricing test across the full mid-market segment, expecting
+      moderate ARPU lift with slight churn risk.
+    falsifier: >
+      If churn rises more than 2% or ARPU lift is below 3%, revert
+      pricing changes immediately.
+    falsifier_status: clear
+    current_evidence_summary: >
+      Test outperforming on all metrics. Churn stable, ARPU up 7%, support
+      flat. Original assumption was correct; falsifier conditions are not
+      approaching. Commitment remains well-founded.
+    recommended_action: >
+      Consider replicating this commitment structure and falsifier design
+      across other pricing decisions.
+    actions:
+      - id: replicate
+        label: Replicate pattern
+        style: primary
+      - id: share
+        label: Share with RevOps
+        style: secondary
+      - id: nothing
+        label: Do nothing
+        style: ghost
+
+history:
+  - id: cr-h001
+    card_type: capital_at_risk
+    title: Agent recruitment spend increase
+    exposure: "$300K"
+    owner: Priya Nair
+    team: Agent Growth
+    commitment: >
+      Increase agent recruitment spend by $300K in Q1, assuming new agent
+      joins will average 50 per month and CAC stays below $6K per agent.
+    foreclosed_alternative: >
+      Hold recruitment spend flat and focus on retention of existing top-tier
+      agents through enhanced commission structures.
+    falsifier: >
+      If agent joins fall below 35 per month for four consecutive weeks or
+      CAC exceeds $6,500, cut incremental recruitment spend immediately.
+    outcome: validated
+    outcome_summary: >
+      52 average monthly joins against a 50-join target. CAC held at $5,800.
+      Assumption was correct; commitment honored. Spend continues into Q2.
+    lessons: >
+      The falsifier threshold was well-calibrated. Setting CAC at $6K vs
+      the $6.5K limit gave enough early-warning runway. Use same structure
+      for Q2 expansion.
+    closed_date: "2026-04-10"
+    days_active: 84
+
+  - id: cr-h002
+    card_type: capital_at_risk
+    title: Mortgage partnership referral assumption
+    exposure: "$220K"
+    owner: David Lowe
+    team: Partnerships
+    commitment: >
+      Commit to exclusive mortgage referral partnership assuming 200+
+      qualified referrals per month within 60 days of launch.
+    foreclosed_alternative: >
+      Maintain non-exclusive referral arrangement with three providers and
+      retain negotiating leverage.
+    falsifier: >
+      If qualified referrals fall below 80 per month for six consecutive
+      weeks, terminate exclusivity and revert to multi-partner model.
+    outcome: falsified
+    outcome_summary: >
+      Referrals peaked at 45 per month — well below the 80-unit falsifier
+      threshold. Exclusivity terminated at week 9. Multi-partner model
+      reinstated. $220K partnership fee partially recovered.
+    lessons: >
+      Demand assumptions were based on competitor benchmarks, not our
+      own agent referral behavior. Foreclosed alternative was the correct
+      path. Smaller pilot before exclusivity would have detected this earlier.
+    closed_date: "2026-03-28"
+    days_active: 63
+
+  - id: cr-h003
+    card_type: stale_commitment
+    title: Canadian province expansion timing
+    exposure: "$1.1M"
+    owner: Amir Shaheen
+    team: Expansion
+    commitment: >
+      Launch operations in two additional Canadian provinces by end of Q2
+      2026, assuming regulatory approval timelines of 8–10 weeks.
+    foreclosed_alternative: >
+      Stage entry to one province in Q2 and defer the second until Q3 once
+      regulatory processes are better understood.
+    falsifier: >
+      If regulatory approval exceeds 14 weeks in the first province, defer
+      second province launch and revise the full expansion timeline.
+    outcome: revised
+    outcome_summary: >
+      Regulatory approval in Ontario took 17 weeks, breaching the 14-week
+      falsifier. Owner revised commitment: single-province Q3 launch with
+      second province deferred to Q4. Budget reallocated accordingly.
+    lessons: >
+      Regulatory timelines in new markets require a wider falsifier window.
+      The staged alternative was the correct structure — it became the revised
+      commitment after falsification.
+    closed_date: "2026-04-25"
+    days_active: 41

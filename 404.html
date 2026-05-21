@@ -1,0 +1,12 @@
+<!doctype html>
+<html>
+  <head>
+    <script>
+      var path = window.location.pathname;
+      var query = window.location.search;
+      var hash = window.location.hash;
+      sessionStorage.setItem('spa_redirect', path + query + hash);
+      window.location.replace('/boud/');
+    </script>
+  </head>
+</html>
