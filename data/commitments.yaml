@@ -204,7 +204,7 @@ history:
   - id: cr-h003
     card_type: stale_commitment
     title: Canadian province expansion timing
-    exposure: "$1.1M"
+    exposure: "$1.2M"
     owner: Amir Shaheen
     team: Expansion
     commitment: >
