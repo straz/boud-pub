@@ -1,0 +1,26 @@
+card_id,card_title,label,value,unit,time,modifier,source,direction,notes
+portfolio,Portfolio Summary,Total Open Commitments,17,count,current,actual,Internal,neutral,
+portfolio,Portfolio Summary,Weakening Commitments,5,count,current,actual,Internal,neutral,
+portfolio,Portfolio Summary,Overdue Commitments,3,count,current,actual,Internal,neutral,
+portfolio,Portfolio Summary,Total Exposure,$3.8M,USD,current,actual,CFO,neutral,
+portfolio,Portfolio Summary,ISR Score,31,score,current,actual,Internal,neutral,
+cr-001,Growth spend assumption weakening,CAC,$224,USD,current,actual,CFO,bad,
+cr-001,Growth spend assumption weakening,CAC,$210,USD,current,plan,CFO,bad,derived: actual − delta
+cr-001,Growth spend assumption weakening,D30 Retention,35%,%,current,actual,CPO,bad,
+cr-001,Growth spend assumption weakening,D30 Retention,38%,%,current,target,CPO,bad,
+cr-001,Growth spend assumption weakening,Falsifier status,Threshold breached yesterday,qualitative,current,actual,Internal,bad,
+cr-002,Hiring plan has not been revisited,Pipeline conversion,Unchanged since commitment,qualitative,current,actual,CRO,bad,
+cr-002,Hiring plan has not been revisited,Owner revision,31,days,current,elapsed,Internal,bad,days since last revision
+cr-002,Hiring plan has not been revisited,Stated confidence,85%,%,current,actual,Internal,bad,not updated
+cr-003,Pricing test outperforming expectations,Churn,Stable  —  no increase,qualitative,current,actual,CMO,good,
+cr-003,Pricing test outperforming expectations,ARPU,+7%,%,current,actual,CFO,good,relative to baseline
+cr-003,Pricing test outperforming expectations,ARPU,0%,%,current,baseline,CFO,good,reference point
+cr-003,Pricing test outperforming expectations,Support load,Flat  —  no increase,qualitative,current,actual,COO,good,
+cr-h001,Agent recruitment spend increase,Agent Joins,52,agents/month,historical,actual,CFO,good,
+cr-h001,Agent recruitment spend increase,Agent Joins,50,agents/month,historical,target,CFO,good,
+cr-h001,Agent recruitment spend increase,Agent CAC,"$5,800",USD,historical,actual,CFO,good,
+cr-h001,Agent recruitment spend increase,Agent CAC,$6000,USD,historical,threshold,CFO,good,from falsifier
+cr-h002,Mortgage partnership referral assumption,Mortgage Referrals,45,referrals/month,historical,actual,CRO,bad,peak
+cr-h002,Mortgage partnership referral assumption,Mortgage Referrals,80,referrals/month,historical,threshold,CRO,bad,falsifier threshold
+cr-h003,Canadian province expansion timing,Regulatory Timeline,17,weeks,historical,actual,Legal,bad,Ontario
+cr-h003,Canadian province expansion timing,Regulatory Timeline,14,weeks,historical,threshold,Legal,bad,falsifier threshold
